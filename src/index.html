@@ -1,0 +1,184 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="container">
+<header class="header">
+<h1 id="title" class="text-center">Lowe's annual musician survey </h1>
+<p id="description" class="text-center"> Thanks for helping us improve our service
+  </p>
+</header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required/>
+      </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your Email"
+             required/>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for "number"
+             >Age<span class="clue">(optional)</span></label>
+      <input
+             type="number"
+             name="age"
+             id="number"
+             min="10"
+             max="99"
+             class="form-control"
+             placeholder="Age"
+             />
+    </div>
+<div class="form-group">
+      <p>What instrument/role do you play in your band?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="lead">Lead guitar</option>
+        <option value="rhytm">Rhythm guitar</option>
+        <option value="bass">Bass</option>
+        <option value="drums">Drummer</option>
+        <option value="Singer">Singer</option>
+        <option value="preferno">Prefer not to say</option>
+      </select>
+    </div>
+     <div class="form-group">
+      <p>Would you recommend Lowe's to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label>
+       <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+    <div class="form-group">
+      <p>
+        What tune do you use the most?<span class="clue">(for guitarists)</span>
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Etune">E standard</option>
+        <option value="Ebtune">Eb standard</option>
+        <option value="Dtune">D standard</option>
+        <option value="DropD">Drop D</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>
+        What would you like to see more in stock?
+        <span class="clue">(variety)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="guitar-pedals"
+          type="checkbox"
+          class="input-checkbox"
+        />Guitar pedals</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="guitar-amplifiers"
+          type="checkbox"
+          class="input-checkbox"
+        />Guitar amplifiers</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="guitar-strings"
+          type="checkbox"
+          class="input-checkbox"
+        />Guitar strings</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="bass-guitars"
+          type="checkbox"
+          class="input-checkbox"
+        />Bass Guitars</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="bass-amplifiers"
+          type="checkbox"
+          class="input-checkbox"
+        />Bass amplifiers</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Drum-snares"
+          type="checkbox"
+          class="input-checkbox"
+        />Drum snares</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="drum-cymbals"
+          type="checkbox"
+          class="input-checkbox"
+        />Drum cymbals</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="starter-kits"
+          type="checkbox"
+          class="input-checkbox"
+        />Drum/bass/guitar starter kits</label
+      >
+     
+    </div>
+     <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+      
